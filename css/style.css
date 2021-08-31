@@ -1,7 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300;500&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+ul, ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input:focus {
+    box-shadow: unset;
+    outline: unset;
+    border: unset;
+}
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    
+}
+body{
+    height: 2000px;
 }
 .video {
     
@@ -26,6 +49,115 @@
     top: 0px;
     left: 0px;
     z-index: 2;
-    background: rgb(24, 24, 73);
+    background: #14204b;
     opacity: 0.5;
+}
+
+
+.img {
+    display: inline-block;
+    width: 100px;
+    position: absolute;
+    z-index: 3;
+    width: 50px;
+    height: 50px;
+    margin-left: 190px;
+   
+}
+.navbar {
+    display: flex;
+    position: absolute;
+    z-index: 3;
+    margin-left: 520px;
+    margin-top: 60px;
+    
+    width: 900px;
+}
+.navbar ul {
+    display: flex;
+    
+}
+.navbar ul li {
+    display: inline;
+    margin-right: 18px;
+}
+.navbar ul li a {
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 14px;
+    color:white;
+
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0a1129;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    visibility: hidden;
+    height: 120px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    visibility: visible;
+    flex-direction: column;
+}
+.h1 {
+    display: block;
+    position: absolute;
+    z-index: 3;
+    color:white;
+    margin-top: 260px;
+    margin-left: 190px;
+    font-size: 65px;
+    font-weight: bold;
+}
+.paragraf1 {
+    display: block;
+    position: absolute;
+    z-index: 3;
+    color:white;
+    margin-top: 340px;
+    margin-left: 190px;
+    font-size: 20px;
+}
+.paragraf2 {
+    display: block;
+    position: absolute;
+    z-index: 3;
+    color:white;
+    margin-top: 380px;
+    margin-left: 190px;
+    font-size: 20px;
+    
+}
+span {
+    margin-right: 30px;
+    margin-left: 20px;
+}
+.button{
+    display: block;
+    position: absolute;
+    z-index: 3;
+    color:white;
+    margin-left: 190px;
+    margin-top: 500px;
+    width: 260px;
+    height: 55px;
+    border-radius: 5px;
+    background-color: rgb(50, 161, 115);
+    font-size: 18px;
+    border:3px solid rgb(50, 161, 115);
+}
+.button:hover {
+    background: #14204b;
+    opacity: 0.5;
+    color: rgb(48, 163, 115);
 }
